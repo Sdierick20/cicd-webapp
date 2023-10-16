@@ -19,3 +19,7 @@ jobs:
         with:
           token: ${{ secrets.GH_DOTCOM_TOKEN }}
           node-version: 16
+      - name: Install dependencies
+        run: yarn install
+      - name: Lint
+        run: yarn lint
