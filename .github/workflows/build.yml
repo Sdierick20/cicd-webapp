@@ -14,3 +14,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "This job's status is ${{ job.status }}."
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          token: ${{ secrets.GH_DOTCOM_TOKEN }}
+          node-version: 16.x
