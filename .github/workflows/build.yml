@@ -24,7 +24,7 @@ jobs:
       - name: Lint
         run: yarn lint
       - name: Build Docker image
-        uses: ../../Dockerfile
+        uses: /Dockerfile
         with:
           push: false
           tags: senned/webapp:latest
