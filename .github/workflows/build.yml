@@ -23,3 +23,9 @@ jobs:
         run: yarn install
       - name: Lint
         run: yarn lint
+      - name: Build Docker image
+        uses: Dockerfile
+        with:
+          push: false
+          tags: senned/webapp:latest
+          
